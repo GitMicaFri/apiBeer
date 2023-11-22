@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+body {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items:center;
+    background: rgba(226, 226, 228, 1);
+    background: radial-gradient(circle,  rgba(226, 226, 228, 1) 13%, rgba(161, 146, 175, 1) 58%, rgba(47, 192, 202, 1) 80%);
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+
+    text-align: center;
+    top: 20px;
+}
+
+.wrapper {
+    width: clamp(200px, 400px, 600px);
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.26);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    outline: 0px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    position:relative;
+    justify-content: space-between;
+    padding: 25px 10px;
+}
+
+img {
+    padding-top: 20px;
+    height: 300px;
+    width: auto;
+   
+}
+
+figcaption {
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+    padding: 25px 10px;
+    align-items:center;
+    overflow-y: auto;
+}
+
+button {
+    box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #404f99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+    color:#ffffff;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+    font-weight:bold;
+}
+
+.generate-btn {
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	padding:13px 32px;
+}
+.generate-btn:hover {
+    background:linear-gradient(to bottom, #404f99 5%, #599bb3 100%);
+	background-color:#404f99;
+}
+.generate-btn:active {
+    position:relative;
+    top: 1px;
+}
+
+#info {
+    position:absolute;
+    bottom: 5px;
+    left: 5px;
+    padding: 5px 10px;
+}
+#info:hover {
+    background:linear-gradient(to bottom, #404f99 5%, #599bb3 100%);
+	background-color:#404f99;
+}
+#info:active {
+    bottom: 4px;
+}
+
+.hidden {
+    display:none;
+}
